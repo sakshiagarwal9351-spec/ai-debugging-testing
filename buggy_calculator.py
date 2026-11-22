@@ -1,9 +1,13 @@
 
+
 def calculate_average(marks):
+    if not marks:
+        return 0
+
     total = 0
 
     for mark in marks:
-        total = mark  # Bug: should add marks
+        total += mark
 
     average = total / len(marks)
     return average
